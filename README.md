@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-# 云开发 quickstart
+# mini-photo-demo
+美颜相机小程序demo
+
+## 云开发 quickstart
 
 这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
 
@@ -7,11 +9,6 @@
 - 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
 - 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
 
-## 参考文档
+### 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-
-=======
-# mini-photo-demo
-美颜相机小程序demo
->>>>>>> 5a5c25da4b54fc61dae58c8785df13aa0d573dac
