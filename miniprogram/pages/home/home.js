@@ -119,10 +119,8 @@ Page({
             url: 'https://api-cn.faceplusplus.com/humanbodypp/v2/segment', //仅为示例，并非真实的接口地址
             method: 'post',
             data: {
-                // "api_key": 'q7QLlhvfrpXIBWcKQSEsbS7Lzxp64Zrw',
-                // "api_secret": 'FDxxtfpZTxZ2jDS2wmrrapDKwwFNKE4R',
-                "api_key": '2JtS__cbCWDObHfpnTfPUAyHpu0xYWUx',
-                "api_secret": 'bS1CEtzTgOGLxmmXEywQp0-jFaZYhmAE',
+                "api_key": '',
+                "api_secret": '',
                 "image_base64": img,
                 "return_grayscale": 0
             },
