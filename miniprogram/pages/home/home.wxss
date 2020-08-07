@@ -1,0 +1,78 @@
+/* miniprogram/pages/home/home.wxss */
+
+.mod-home {
+    min-height: 100vh;
+    text-align: center;
+    background: #fff;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30rpx;
+}
+
+.user-info .avatar {
+    width: 150rpx;
+    border-radius: 50%;
+    margin: 0 15rpx;
+    display: block;
+    overflow: hidden;
+    height: 150rpx;
+}
+
+.image-select {
+    width: 580rpx;
+    height: 460rpx;
+    border: 1px solid #ededed;
+    border-radius: 20rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50rpx auto;
+}
+
+.image-select .icon {
+    width: 100rpx;
+}
+
+.mask {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    text-align: center;
+}
+
+.camera .mini-btn {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin: 80rpx auto 0;
+    position: absolute;
+    bottom: 80rpx;
+    left: 43%;
+}
+
+.myCanvas {
+    /* scale: 0.8; */
+    margin: 30rpx auto;
+}
+
+.choose-block{
+    text-align: center;
+}
+
+.choose-block .img{
+    margin: 50rpx auto;
+}
+
+.choose-block .img-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choose-block .img-list .item{
+    width: 200rpx;
+}

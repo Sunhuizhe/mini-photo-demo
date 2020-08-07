@@ -1,0 +1,33 @@
+<!--miniprogram/pages/home/home.wxml-->
+
+<!-- 未显示相机 -->
+<view wx:if="{{showCamera == 0}}" class="mod-home">
+    <view class="user-info">
+        <view class="avatar">
+            <open-data default-avatar="../imgs/default-avatar.png" type="userAvatarUrl"></open-data>
+        </view>
+        <view class="nick">
+            <open-data type='userNickName'></open-data>
+        </view>
+    </view>
+    <view bindtap="showCameraFun" class="image-select">
+        <image mode="widthFix" class="icon" src="../../imgs/images.png"></image>
+    </view>
+</view>
+
+<!-- 拍照 -->
+<view class="mask camera" wx:elif="{{showCamera == 1}}">
+    <camera style="width: 100vw; height: 100vh;" device-position="front"></camera>
+    <button bindtap="takePhoto" class="mini-btn" type="default" size="mini"></button>
+</view>
+
+<!-- 显示换背景后的照片 -->
+<view style="width: 100vw; min-height: 100vh;" class="choose-block" wx:else>
+    <canvas class="myCanvas" canvas-id="myCanvas" style="width: {{cvw}}px; height: {{cvh}}px;"></canvas>
+    <view class="img-list">
+        <image data-img="{{item}}" bindtap="changeBgImage" class="item" wx:for="{{bgList}}" src="{{item}}" mode="widthFix"></image>
+    </view>
+    <button bindtap="saveImage">保存图片</button>
+
+    <button bindtap="tryAgain">重试</button>
+</view>
